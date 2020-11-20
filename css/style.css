@@ -109,7 +109,7 @@ a {
 .section1 {
     grid-area: section1;
     height: 700px;
-    background-image: url("images/img1.jpg");
+    background-image: url("/images/img1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -134,7 +134,7 @@ a {
 .section2 {
     grid-area: section2;
     height: 1000px;
-    background-image: url("images/img2.jpg");
+    background-image: url("/images/img2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -167,7 +167,7 @@ a {
 .section3 {
     grid-area: section3;
     height: 1000px;
-    background-image: url("images/img3.jpg");
+    background-image: url("/images/img3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -227,7 +227,7 @@ a {
 /* Section 4 */
 .section4 {
     grid-area: section4;
-    height: 400px;
+    height: 200px;
     background-color: rgb(168, 168, 168);
     display: grid;
     grid-template-columns: 1fr 30px 1fr;
