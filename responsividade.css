@@ -1,0 +1,122 @@
+@media screen and (max-width: 1250px) {
+.header {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    justify-items: flex-start;
+    align-items: center;
+}  
+}
+@media screen and (max-width: 1100px) {
+.li + li {
+    margin-left: 90px;
+}
+}
+@media screen and (max-width: 1000px) {
+.li + li {
+    margin-left: 70px;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: flex-start;
+    height: 150px;
+} 
+.conatinerlogo {
+    margin-left: 0;
+    height: 100px;
+} 
+.section2 {
+    height: 1000px;
+}
+.containerobj {
+    display: grid;
+    grid-template-columns: auto ;
+}
+.pdrtxtobj {
+    margin-top: 30px;
+    width: 90%;
+    height: 480px;
+    font-size: 20px;
+}
+.containertec {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-items: center;
+    align-items: flex-start;
+}
+}
+@media screen and (max-width: 700px) {
+.ul {
+    display: none;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 120px;
+}
+.logo2 {
+    margin-top: 15px;
+}
+.ttl {
+    width: 70%;
+}
+.containertec {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: flex-start;
+}
+.pdrtec {
+    margin-top: 30px;
+}
+.tec2 {
+    margin-top: 10px;
+}
+.tec3 {
+    margin-top: 10px;
+}
+.section4 {
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    justify-items: center;
+    align-items: center;
+}
+.divisor {
+    height: 1px;
+    width: 50%;
+}
+.icondebug {
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    width: 40px;
+}
+.setamenu {
+    display: inline;
+}
+}
+@media screen and (max-width: 500px){
+.ttl {
+    width: 300px;
+}
+.section2 {
+    height: 1250px;
+}
+.containerobj {
+    display: grid;
+    grid-template-columns: auto ;
+}
+.pdrtxtobj {
+    margin-top: 50px;
+    width: 90%;
+    height: 480px;
+    font-size: 18px;
+}
+.pdrtxtobj::first-line {
+    font-size: 22px;
+}
+}

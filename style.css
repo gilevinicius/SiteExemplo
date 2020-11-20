@@ -1,0 +1,257 @@
+/* Geral */
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    transition: .3s;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Estrutura */
+.estrutura {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "header"
+        "section1"
+        "section2"
+        "section3"
+        "section4"
+            ;
+}
+
+/* Header */
+.header {
+    grid-area: header;
+    height: 120px;
+    background-color: rgb(104, 104, 104);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: flex-start;
+    align-items: center;
+}
+.conatinerlogo {
+    margin-left: 20%;
+    height: 120px;
+    display: inline;
+    color: white;
+    font-size: 25px;
+}
+.logo1 {
+    position: absolute;
+    top: 35px;
+    transform: translateX(130%);
+}
+.logo2 {
+    margin-top: 25px;
+}
+.logo2::first-letter{
+    font-size: 60px;
+    color: rgb(255, 123, 71);
+}
+.ul {
+    font-size: 17px;
+    font-family: arial;
+    display: flex;
+}
+.bttmenu {
+    color: white;
+    padding: 5px;
+    transition: .4s;
+}
+.bttmenu:hover {
+    color: rgb(255, 123, 71);
+}
+.li + li {
+    margin-left: 100px;
+}
+
+/* Menu responsivo */
+.menuresp {
+    position: fixed;
+    left: -150px;
+    height: 100%;
+    width: 150px;
+    grid-area: header;
+    background: rgba(94, 94, 94, 0.842);
+    z-index: 100;
+    transition: .3s;
+}
+.ulmenu {
+    margin-top: 200px;
+    padding: 20px;
+    text-align: center;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+.ulmenu li {
+    margin-bottom: 50px;
+  }
+.ulmenu a {
+    color: white;
+    transition: .2s;
+  }
+.setamenu {
+  position: absolute;
+  padding-left: 5px;
+  left: 149px;
+  top: 45%;
+  height: 50px;
+  width: 50px;
+  display: none;
+}
+
+/* Section 1 */
+.section1 {
+    grid-area: section1;
+    height: 700px;
+    background-image: url("images/img1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    justify-items: center;
+    align-items: flex-end;
+}
+.ttl {
+    border-radius: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: .5px;
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 230px;
+    background-color: rgba(124, 124, 124, 0.658);
+    color: white;
+}
+
+/* Section 2 */
+.section2 {
+    grid-area: section2;
+    height: 1000px;
+    background-image: url("images/img2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.containerobj {
+    background-color: rgba(0, 0, 0, 0.685);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    justify-items: center;
+    align-items: flex-start;
+}
+.pdrtxtobj {
+    color: white;
+    margin-top: 200px;
+    padding: 5px;
+    text-align: center;
+    width: 400px;
+    height: 500px;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: .5px;
+    font-size: 20px;
+}
+.pdrtxtobj::first-line {
+    font-size: 25px;
+}
+
+/* Section 3 */
+.section3 {
+    grid-area: section3;
+    height: 1000px;
+    background-image: url("images/img3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.containertec {
+    background-color: rgba(0, 0, 0, 0.603);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-items: center;
+    align-items: flex-start;
+}
+.pdrtec {
+    background-color: rgba(255, 123, 71, 0.616);
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-top: 150px;
+    transition: .4s;
+}
+.tec1 {
+    height: 200px;
+    width: 200px;
+}
+.tec2 {
+    height: 200px;
+    width: 200px;
+}
+.tec3 {
+    height: 200px;
+    width: 200px;
+}
+.txttec1 {
+    margin-top: 89px;
+}
+.txttec11 {
+    display: none;
+    padding: 2px;
+}
+.txttec2 {
+    margin-top: 89px;
+}
+.txttec22 {
+    display: none;
+    padding: 2px;
+}
+.txttec2 {
+    margin-top: 89px;
+}
+.txttec22 {
+    display: none;
+    padding: 2px;
+}
+
+/* Section 4 */
+.section4 {
+    grid-area: section4;
+    height: 400px;
+    background-color: rgb(168, 168, 168);
+    display: grid;
+    grid-template-columns: 1fr 30px 1fr;
+    justify-items: center;
+    align-items: center;
+}
+.ulicon {
+    display: flex;
+}
+.pdricon {
+    height: 40px;
+    width: 40px;
+}
+.pdrlicon + li {
+    margin-left: 10px;
+}
+.divisor {
+    height: 150px;
+    width: 1px;
+    background-color: black;
+}
+.txtrodape {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Nunito Sans', sans-serif;
+    width: 80%;
+}
