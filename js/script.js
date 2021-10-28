@@ -72,17 +72,43 @@ function openbox3txt () {
     txttec33.style.display = "inline"
 }
 
-// Animacao scrollSuave
-$('ul a').click(function(e){
-	e.preventDefault();
-	var id = $(this).attr('href'),
-			targetOffset = $(id).offset().top,
-			menuHeight = $('nav').innerHeight();
 
-	console.log(menuHeight);
+// Scroll para links internos
+const linksInternos = document.querySelectorAll (".scroll a[href^='#']");
 
-	$('html, body').animate({
-		scrollTop: targetOffset - menuHeight
-	}, 500);
-});
+function scrollToSection(event) {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute ("href")
+    const section = document.querySelector (href)
+    section.scrollIntoView( {
+        behavior: "smooth",
+        block: "start"
+    });
+}
+
+linksInternos.forEach((link) => {
+    link.addEventListener("click", scrollToSection)
+})
+
+
+// animacao ao scroll
+function initAnimationScroll () {
+
+    const sections = document.querySelectorAll (".js-scroll")
+    const windowMetade = window.innerHeight * 0.7
+  
+    function animascroll () {
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top 
+        const isSectionVisible = (sectionTop - windowMetade) < 0
+        if (isSectionVisible) {
+          section.classList.add ("ativo");
+        }
+      })
+    }
+    animascroll ()
+    window.addEventListener ("scroll", animascroll)
+  }
+  initAnimationScroll()
+  
 

@@ -1,0 +1,10 @@
+/* animacao ao scroll */
+.js-scroll {
+  opacity: 0;
+  transition: .5s;
+  transform: translate3d(-50px, 0, 0);
+}
+.js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
